@@ -24,9 +24,28 @@ Things to reflect on:
   
 */
 
-let a = "Alice";
-let b = 5;
-let c = 20;
-let d = a + " bought " + b + " items for $" + c + ".";
+let userName = "Alice";
+let numberOfItems = 5;
+let totalCost = 20;
+let purchaseSummary = userName + " bought " + numberOfItems + " items for $" + totalCost + ".";
 
-console.log(d);
+console.log(purchaseSummary);
+
+Enhancements
+let currencySymbol = "$";
+let purchaseSummary = userName + " bought " + numberOfItems + " items for " + currencySymbol + totalCost + ".";
+
+let storeName = "CostCo";
+let purchaseSummary = userName + " bought " + numberOfItems + " items from " + storeName + " for " + currencySymbol + totalCost + ".";
+
+
+Meaningful variable names make the code easier to understand, maintain, and debug. 
+  For example, userName is much clearer than a, and numberOfItems is more descriptive than b. 
+  This helps anyone reading the code (including your future self) quickly grasp what the code is doing.
+
+Using vague or single-letter names like a, b, or x.
+  Using names that don’t describe the purpose of the variable (e.g., data or value).
+  Inconsistent naming conventions (e.g., mixing camelCase and snake_case).
+
+Clear variable names make it easier for team members to understand and work with each other’s code. 
+  Consistent naming conventions ensure everyone is on the same page, reducing confusion and making collaboration smoother.
